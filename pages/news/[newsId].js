@@ -1,6 +1,12 @@
-// our-domain.com/news
+import { useRouter } from 'next/router';
+
+// our-domain.com/news/something-important
 
 function DetailPage() {
+  const router = useRouter();
+
+  const newsId = console.log(router.query.newsId);
+
   return <h1>The Detail Page</h1>;
 }
 
